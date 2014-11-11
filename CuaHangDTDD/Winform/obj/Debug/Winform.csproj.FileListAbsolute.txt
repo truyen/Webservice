@@ -1,0 +1,109 @@
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\Winform\bin\Debug\Winform.exe.config
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\Winform\obj\Debug\Winform.exe
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\Winform\obj\Debug\Winform.pdb
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\Winform\bin\Debug\Winform.exe
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\Winform\bin\Debug\Winform.pdb
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\Winform\bin\Debug\Com.dll
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\Winform\bin\Debug\EntityFramework.dll
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\Winform\bin\Debug\Com.pdb
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\Winform\bin\Debug\EntityFramework.xml
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\Winform\obj\Debug\Winform.csprojResolveAssemblyReference.cache
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmBaoCaoDoanhThu.resources
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmQuanLyDonHang.resources
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmQuanLyHangSanXuat.resources
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmQuanLyNhapHang.resources
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmThongKeTonKho.resources
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmThongTinDonHang.resources
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmThongTinNhapHang.resources
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmThongTinSanPham.resources
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmQuanLySanPham.resources
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmTrangChu.resources
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmInBaoCao.resources
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.InputDialog.resources
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\Winform\obj\Debug\Winform.Properties.Resources.resources
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\Winform\obj\Debug\Winform.csproj.GenerateResource.Cache
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\Winform\obj\Debug\RdlCompile.cache
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\Winform\obj\Debug\RdlCompile.compiled
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\Winform\bin\Debug\Winform.exe.config
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\Winform\bin\Debug\Winform.exe
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\Winform\bin\Debug\Winform.pdb
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\Winform\bin\Debug\Com.dll
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\Winform\bin\Debug\EntityFramework.dll
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\Winform\bin\Debug\Com.pdb
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\Winform\bin\Debug\EntityFramework.xml
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.csprojResolveAssemblyReference.cache
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmBaoCaoDoanhThu.resources
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmQuanLyDonHang.resources
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmQuanLyHangSanXuat.resources
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmQuanLyNhapHang.resources
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmThongKeTonKho.resources
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmThongTinDonHang.resources
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmThongTinNhapHang.resources
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmThongTinSanPham.resources
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmQuanLySanPham.resources
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmTrangChu.resources
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmInBaoCao.resources
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.InputDialog.resources
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.Properties.Resources.resources
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.csproj.GenerateResource.Cache
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\Winform\obj\Debug\RdlCompile.cache
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\Winform\obj\Debug\RdlCompile.compiled
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.exe
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.pdb
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\Winform\bin\Debug\Winform.exe.config
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\Winform\bin\Debug\Winform.exe
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\Winform\bin\Debug\Winform.pdb
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\Winform\bin\Debug\Com.dll
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\Winform\bin\Debug\EntityFramework.dll
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\Winform\bin\Debug\Com.pdb
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\Winform\bin\Debug\EntityFramework.xml
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.csprojResolveAssemblyReference.cache
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmBaoCaoDoanhThu.resources
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmQuanLyDonHang.resources
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmQuanLyHangSanXuat.resources
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmQuanLyNhapHang.resources
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmThongKeTonKho.resources
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmThongTinDonHang.resources
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmThongTinNhapHang.resources
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmThongTinSanPham.resources
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmQuanLySanPham.resources
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmTrangChu.resources
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmInBaoCao.resources
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.InputDialog.resources
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.Properties.Resources.resources
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.csproj.GenerateResource.Cache
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\Winform\obj\Debug\RdlCompile.cache
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\Winform\obj\Debug\RdlCompile.compiled
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.exe
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\Winform\obj\Debug\Winform.pdb
+C:\Users\Danh\Desktop\CuaHangDTDD\Winform\bin\Debug\Winform.exe.config
+C:\Users\Danh\Desktop\CuaHangDTDD\Winform\bin\Debug\Winform.exe
+C:\Users\Danh\Desktop\CuaHangDTDD\Winform\bin\Debug\Winform.pdb
+C:\Users\Danh\Desktop\CuaHangDTDD\Winform\bin\Debug\Com.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\Winform\bin\Debug\EntityFramework.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\Winform\bin\Debug\EntityFramework.xml
+C:\Users\Danh\Desktop\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmBaoCaoDoanhThu.resources
+C:\Users\Danh\Desktop\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmQuanLyDonHang.resources
+C:\Users\Danh\Desktop\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmQuanLyHangSanXuat.resources
+C:\Users\Danh\Desktop\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmQuanLyNhapHang.resources
+C:\Users\Danh\Desktop\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmThongKeTonKho.resources
+C:\Users\Danh\Desktop\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmThongTinDonHang.resources
+C:\Users\Danh\Desktop\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmThongTinNhapHang.resources
+C:\Users\Danh\Desktop\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmThongTinSanPham.resources
+C:\Users\Danh\Desktop\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmQuanLySanPham.resources
+C:\Users\Danh\Desktop\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmTrangChu.resources
+C:\Users\Danh\Desktop\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FmInBaoCao.resources
+C:\Users\Danh\Desktop\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.InputDialog.resources
+C:\Users\Danh\Desktop\CuaHangDTDD\Winform\obj\Debug\Winform.Properties.Resources.resources
+C:\Users\Danh\Desktop\CuaHangDTDD\Winform\obj\Debug\Winform.csproj.GenerateResource.Cache
+C:\Users\Danh\Desktop\CuaHangDTDD\Winform\obj\Debug\RdlCompile.cache
+C:\Users\Danh\Desktop\CuaHangDTDD\Winform\obj\Debug\RdlCompile.compiled
+C:\Users\Danh\Desktop\CuaHangDTDD\Winform\obj\Debug\Winform.exe
+C:\Users\Danh\Desktop\CuaHangDTDD\Winform\obj\Debug\Winform.pdb
+C:\Users\Danh\Desktop\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FormNhanVien.resources
+C:\Users\Danh\Desktop\CuaHangDTDD\Winform\bin\Debug\Com.pdb
+C:\Users\Danh\Desktop\CuaHangDTDD\Winform\obj\Debug\Winform.csprojResolveAssemblyReference.cache
+C:\Users\Danh\Desktop\CuaHangDTDD\Winform\obj\Debug\Winform.GUI.FormDonHang.resources
+D:\tot nghiep\CuaHangDTDD2_11\CuaHangDTDD\Winform\bin\Debug\Winform.exe.config
+D:\tot nghiep\CuaHangDTDD2_11\CuaHangDTDD\Winform\obj\Debug\Winform.exe
+D:\tot nghiep\CuaHangDTDD2_11\CuaHangDTDD\Winform\obj\Debug\Winform.pdb

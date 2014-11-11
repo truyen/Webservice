@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CuaHangDTDD" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DANH-PC\SQLEXPRESS;Initial Catalog=CuaHangDTDD;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="CuaHangDTDDConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.DonHangs" Member="DonHangs">
+    <Type Name="DonHang">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ngay" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="tongtien" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="dagiaohang" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="kh_ten" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="kh_diachi" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="kh_email" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="kh_sdt" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="DonHang_ChiTiet_DonHang" Member="ChiTiet_DonHangs" AccessModifier="Internal" ThisKey="id" OtherKey="donhang_id" Type="ChiTiet_DonHang" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HangSXes" Member="HangSXes">
+    <Type Name="HangSX">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ten" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="HangSX_SanPham" Member="SanPhams" AccessModifier="Internal" ThisKey="id" OtherKey="hangsx_id" Type="SanPham" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SanPhams" Member="SanPhams">
+    <Type Name="SanPham">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="masp" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ten" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="mota" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="gia" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="hangsx_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="SanPham_SanPham_ChiTiet" Member="SanPham_ChiTiets" AccessModifier="Internal" ThisKey="id" OtherKey="sanpham_id" Type="SanPham_ChiTiet" />
+      <Association Name="HangSX_SanPham" Member="HangSX" ThisKey="hangsx_id" OtherKey="id" Type="HangSX" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TonKhoes" Member="TonKhoes">
+    <Type Name="TonKhoe">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="soluong" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ngay" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="sanpham_chitiet_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="SanPham_ChiTiet_TonKhoe" Member="SanPham_ChiTiet" ThisKey="sanpham_chitiet_id" OtherKey="id" Type="SanPham_ChiTiet" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NhanVien" Member="NhanViens">
+    <Type Name="NhanVien">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ten" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pass" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="quyen" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SanPham_ChiTiet" Member="SanPham_ChiTiets">
+    <Type Name="SanPham_ChiTiet">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="tonkho" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="mausac_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="sanpham_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="SanPham_ChiTiet_TonKhoe" Member="TonKhoes" AccessModifier="Internal" ThisKey="id" OtherKey="sanpham_chitiet_id" Type="TonKhoe" />
+      <Association Name="SanPham_ChiTiet_ChiTiet_DonHang" Member="ChiTiet_DonHangs" AccessModifier="Internal" ThisKey="id" OtherKey="sanpham_chitiet_id" Type="ChiTiet_DonHang" />
+      <Association Name="SanPham_ChiTiet_ChiTiet_NhapHang" Member="ChiTiet_NhapHangs" AccessModifier="Internal" ThisKey="id" OtherKey="sanpham_chitiet_id" Type="ChiTiet_NhapHang" />
+      <Association Name="SanPham_SanPham_ChiTiet" Member="SanPham" ThisKey="sanpham_id" OtherKey="id" Type="SanPham" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ChiTiet_DonHang" Member="ChiTiet_DonHangs">
+    <Type Name="ChiTiet_DonHang">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="soluong" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="dongia" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="donhang_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="sanpham_chitiet_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="DonHang_ChiTiet_DonHang" Member="DonHang" ThisKey="donhang_id" OtherKey="id" Type="DonHang" IsForeignKey="true" />
+      <Association Name="SanPham_ChiTiet_ChiTiet_DonHang" Member="SanPham_ChiTiet" ThisKey="sanpham_chitiet_id" OtherKey="id" Type="SanPham_ChiTiet" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ChiTiet_NhapHang" Member="ChiTiet_NhapHangs">
+    <Type Name="ChiTiet_NhapHang">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="soluong" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="dongia" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="nhaphang_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="sanpham_chitiet_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="SanPham_ChiTiet_ChiTiet_NhapHang" Member="SanPham_ChiTiet" ThisKey="sanpham_chitiet_id" OtherKey="id" Type="SanPham_ChiTiet" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

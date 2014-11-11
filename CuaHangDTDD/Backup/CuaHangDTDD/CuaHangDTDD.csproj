@@ -1,0 +1,539 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6FB29325-CC72-4653-9B70-1037D125496E}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CuaHangDTDD</RootNamespace>
+    <AssemblyName>CuaHangDTDD</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.3.0.20105.1\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.1\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.1.0.20105.408\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\FrontAboutController.cs" />
+    <Compile Include="Controllers\FrontCartController.cs" />
+    <Compile Include="Controllers\FrontContactController.cs" />
+    <Compile Include="Controllers\FrontController.cs" />
+    <Compile Include="Controllers\FrontHomeController.cs" />
+    <Compile Include="Controllers\FrontProductDetailController.cs" />
+    <Compile Include="Controllers\FrontProductsController.cs" />
+    <Compile Include="Controllers\FrontSearchController.cs" />
+    <Compile Include="Controllers\ImageUploadController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Front\-g5pDUSRgvxvOl5u-a_WHw.woff" />
+    <Content Include="Content\Front\-WzdRTzRa5k6HlJK6-dK9Q.eot" />
+    <Content Include="Content\Front\0.png" />
+    <Content Include="Content\Front\2.png" />
+    <Content Include="Content\Front\3.png" />
+    <Content Include="Content\Front\4.png" />
+    <Content Include="Content\Front\5.png" />
+    <Content Include="Content\Front\accordionMarker.gif" />
+    <Content Include="Content\Front\arrowDown-active.png" />
+    <Content Include="Content\Front\arrowDown.png" />
+    <Content Include="Content\Front\arrowUp-active.png" />
+    <Content Include="Content\Front\arrowUp.png" />
+    <Content Include="Content\Front\back.gif" />
+    <Content Include="Content\Front\back.png" />
+    <Content Include="Content\Front\banner1.png" />
+    <Content Include="Content\Front\body-bg.gif" />
+    <Content Include="Content\Front\btnNext-1.png" />
+    <Content Include="Content\Front\btnNext-2.png" />
+    <Content Include="Content\Front\btnNext-3.png" />
+    <Content Include="Content\Front\btnNext-4.png" />
+    <Content Include="Content\Front\btnNext.png" />
+    <Content Include="Content\Front\btnPrevious-1.png" />
+    <Content Include="Content\Front\btnPrevious-2.png" />
+    <Content Include="Content\Front\btnPrevious-3.png" />
+    <Content Include="Content\Front\btnPrevious-4.png" />
+    <Content Include="Content\Front\btnPrevious.png" />
+    <Content Include="Content\Front\button.png" />
+    <Content Include="Content\Front\button1.png" />
+    <Content Include="Content\Front\caption.js" />
+    <Content Include="Content\Front\cart-button.png" />
+    <Content Include="Content\Front\cart-button1.png" />
+    <Content Include="Content\Front\cat-active.gif" />
+    <Content Include="Content\Front\cat-bg.png" />
+    <Content Include="Content\Front\cat-divider.gif" />
+    <Content Include="Content\Front\cat06_resized.png" />
+    <Content Include="Content\Front\cat07_resized.png" />
+    <Content Include="Content\Front\cat08_resized.png" />
+    <Content Include="Content\Front\cat09_resized.png" />
+    <Content Include="Content\Front\cat10_resized.png" />
+    <Content Include="Content\Front\cat11_resized.png" />
+    <Content Include="Content\Front\cat12_resized.png" />
+    <Content Include="Content\Front\cat13_resized.png" />
+    <Content Include="Content\Front\cat14_resized.png" />
+    <Content Include="Content\Front\cat15_resized.png" />
+    <Content Include="Content\Front\cat16_resized.png" />
+    <Content Include="Content\Front\cat17_resized.png" />
+    <Content Include="Content\Front\cat18_resized.png" />
+    <Content Include="Content\Front\cat19_resized.png" />
+    <Content Include="Content\Front\cat20_resized.png" />
+    <Content Include="Content\Front\cat21_resized.png" />
+    <Content Include="Content\Front\cat22_resized.png" />
+    <Content Include="Content\Front\cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot" />
+    <Content Include="Content\Front\cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff" />
+    <Content Include="Content\Front\close.gif" />
+    <Content Include="Content\Front\closebox.png" />
+    <Content Include="Content\Front\closelabel.gif" />
+    <Content Include="Content\Front\cloudflare.min.js_bk" />
+    <Content Include="Content\Front\constant.css" />
+    <Content Include="Content\Front\contentPattern.png" />
+    <Content Include="Content\Front\contentPatternBottom.png" />
+    <Content Include="Content\Front\contentPatternLeft.png" />
+    <Content Include="Content\Front\contentPatternRight.png" />
+    <Content Include="Content\Front\contentPatternTop.png" />
+    <Content Include="Content\Front\continue_link-marker1.gif" />
+    <Content Include="Content\Front\con_address.png" />
+    <Content Include="Content\Front\con_info.png" />
+    <Content Include="Content\Front\con_mobile.png" />
+    <Content Include="Content\Front\con_tel.png" />
+    <Content Include="Content\Front\css-family=Open+Sans-400,600,700italic,800.css" />
+    <Content Include="Content\Front\css-family=Oswald&amp;v1.css" />
+    <Content Include="Content\Front\css-family=Quattrocento+Sans.css" />
+    <Content Include="Content\Front\ddsmoothmenu.js" />
+    <Content Include="Content\Front\default_thumbnail.gif" />
+    <Content Include="Content\Front\DetailsContainer-bg.gif" />
+    <Content Include="Content\Front\down.gif" />
+    <Content Include="Content\Front\down_small.gif" />
+    <Content Include="Content\Front\e.gif" />
+    <Content Include="Content\Front\efd6FGWWGX5Z3ztwLBrG9b2aU247V0zTzydO4RoO9Ok.woff" />
+    <Content Include="Content\Front\efd6FGWWGX5Z3ztwLBrG9U2k4ogKuXZ6cvJ9G6hiscg.eot" />
+    <Content Include="Content\Front\error.gif" />
+    <Content Include="Content\Front\f.gif" />
+    <Content Include="Content\Front\fi000002.js" />
+    <Content Include="Content\Front\forward.png" />
+    <Content Include="Content\Front\header-background.png" />
+    <Content Include="Content\Front\iconSweets1.png" />
+    <Content Include="Content\Front\iconSweets2.png" />
+    <Content Include="Content\Front\ieonly.css" />
+    <Content Include="Content\Front\imagepreloader.js" />
+    <Content Include="Content\Front\img1.png" />
+    <Content Include="Content\Front\img2.png" />
+    <Content Include="Content\Front\img3.png" />
+    <Content Include="Content\Front\img4.png" />
+    <Content Include="Content\Front\img5.png" />
+    <Content Include="Content\Front\info.png" />
+    <Content Include="Content\Front\jqtransform.js" />
+    <Content Include="Content\Front\jquery-1.4.2.min.js" />
+    <Content Include="Content\Front\jquery.easing.1.3.js" />
+    <Content Include="Content\Front\jquery.prettyPhoto.js" />
+    <Content Include="Content\Front\key.jpg" />
+    <Content Include="Content\Front\kwicks-1.5.1.pack.js" />
+    <Content Include="Content\Front\kwiks_1.png" />
+    <Content Include="Content\Front\kwiks_2.png" />
+    <Content Include="Content\Front\kwiks_3.png" />
+    <Content Include="Content\Front\kwiks_4.png" />
+    <Content Include="Content\Front\kwiks_5.png" />
+    <Content Include="Content\Front\kwiks_bg.png" />
+    <Content Include="Content\Front\list-marker.gif" />
+    <Content Include="Content\Front\listMarker.gif" />
+    <Content Include="Content\Front\loader-1.gif" />
+    <Content Include="Content\Front\loader-2.gif" />
+    <Content Include="Content\Front\loader-3.gif" />
+    <Content Include="Content\Front\loader-4.gif" />
+    <Content Include="Content\Front\loading.gif" />
+    <Content Include="Content\Front\logo.png" />
+    <Content Include="Content\Front\logo_bk.png" />
+    <Content Include="Content\Front\logo_bk1.png" />
+    <Content Include="Content\Front\log_critical.png" />
+    <Content Include="Content\Front\log_debug.png" />
+    <Content Include="Content\Front\modal.css" />
+    <Content Include="Content\Front\modal.js" />
+    <Content Include="Content\Front\mooPrompt.css" />
+    <Content Include="Content\Front\mooPrompt.js" />
+    <Content Include="Content\Front\mootools.js" />
+    <Content Include="Content\Front\nePSb-bg.png" />
+    <Content Include="Content\Front\nextlabel.gif" />
+    <Content Include="Content\Front\next_16x16.png" />
+    <Content Include="Content\Front\no-button-bg.png" />
+    <Content Include="Content\Front\nonebutton.gif" />
+    <Content Include="Content\Front\notify_blue.gif" />
+    <Content Include="Content\Front\Open_Sans_400_600_700_italic_800.css" />
+    <Content Include="Content\Front\Oswaldv1.css" />
+    <Content Include="Content\Front\pdf_button.png" />
+    <Content Include="Content\Front\PIE.php" />
+    <Content Include="Content\Front\png.png" />
+    <Content Include="Content\Front\poll_bars.css" />
+    <Content Include="Content\Front\prettyPhoto.css" />
+    <Content Include="Content\Front\previous_16x16.png" />
+    <Content Include="Content\Front\previous_page.gif" />
+    <Content Include="Content\Front\prevlabel.gif" />
+    <Content Include="Content\Front\printButton.png" />
+    <Content Include="Content\Front\Product-border-bg.gif" />
+    <Content Include="Content\Front\Product01.png" />
+    <Content Include="Content\Front\Product01_resized.png" />
+    <Content Include="Content\Front\Product02.png" />
+    <Content Include="Content\Front\Product02_resized.png" />
+    <Content Include="Content\Front\Product03.png" />
+    <Content Include="Content\Front\Product03_resized.png" />
+    <Content Include="Content\Front\Product04.png" />
+    <Content Include="Content\Front\Product04_resized.png" />
+    <Content Include="Content\Front\Product05_resized.png" />
+    <Content Include="Content\Front\Product06_resized.png" />
+    <Content Include="Content\Front\Product07_resized.png" />
+    <Content Include="Content\Front\Product08_resized.png" />
+    <Content Include="Content\Front\Product09_resized.png" />
+    <Content Include="Content\Front\Product10_resized.png" />
+    <Content Include="Content\Front\Product11_resized.png" />
+    <Content Include="Content\Front\Product12_resized.png" />
+    <Content Include="Content\Front\Product13_resized.png" />
+    <Content Include="Content\Front\Product14_resized.png" />
+    <Content Include="Content\Front\Product15_resized.png" />
+    <Content Include="Content\Front\Product16_resized.png" />
+    <Content Include="Content\Front\Product17_resized.png" />
+    <Content Include="Content\Front\Product18_resized.png" />
+    <Content Include="Content\Front\Product19_resized.png" />
+    <Content Include="Content\Front\Product20_resized.png" />
+    <Content Include="Content\Front\Product21_resized.png" />
+    <Content Include="Content\Front\Product22_resized.png" />
+    <Content Include="Content\Front\Product23_resized.png" />
+    <Content Include="Content\Front\Product24_resized.png" />
+    <Content Include="Content\Front\Product25_resized.png" />
+    <Content Include="Content\Front\Product26_resized.png" />
+    <Content Include="Content\Front\Product27_resized.png" />
+    <Content Include="Content\Front\Product28_resized.png" />
+    <Content Include="Content\Front\Product29_resized.png" />
+    <Content Include="Content\Front\Product30_resized.png" />
+    <Content Include="Content\Front\Product31_resized.png" />
+    <Content Include="Content\Front\Product32_resized.png" />
+    <Content Include="Content\Front\Product33_resized.png" />
+    <Content Include="Content\Front\Product34_resized.png" />
+    <Content Include="Content\Front\Product35_resized.png" />
+    <Content Include="Content\Front\Product36_resized.png" />
+    <Content Include="Content\Front\Product37_resized.png" />
+    <Content Include="Content\Front\Product38_resized.png" />
+    <Content Include="Content\Front\Product39_resized.png" />
+    <Content Include="Content\Front\Product40_resized.png" />
+    <Content Include="Content\Front\Product41_resized.png" />
+    <Content Include="Content\Front\Product42_resized.png" />
+    <Content Include="Content\Front\Product43_resized.png" />
+    <Content Include="Content\Front\Product44_resized.png" />
+    <Content Include="Content\Front\Product45_resized.png" />
+    <Content Include="Content\Front\Product46_resized.png" />
+    <Content Include="Content\Front\Product47_resized.png" />
+    <Content Include="Content\Front\Product48_resized.png" />
+    <Content Include="Content\Front\Product49_resized.png" />
+    <Content Include="Content\Front\Product50_resized.png" />
+    <Content Include="Content\Front\Product51_resized.png" />
+    <Content Include="Content\Front\Product52_resized.png" />
+    <Content Include="Content\Front\Product53_resized.png" />
+    <Content Include="Content\Front\Product54_resized.png" />
+    <Content Include="Content\Front\Product55_resized.png" />
+    <Content Include="Content\Front\Product56_resized.png" />
+    <Content Include="Content\Front\Product57_resized.png" />
+    <Content Include="Content\Front\Product58_resized.png" />
+    <Content Include="Content\Front\Product59_resized.png" />
+    <Content Include="Content\Front\Product60_resized.png" />
+    <Content Include="Content\Front\Product61_resized.png" />
+    <Content Include="Content\Front\Product62_resized.png" />
+    <Content Include="Content\Front\Product63_resized.png" />
+    <Content Include="Content\Front\Product64_resized.png" />
+    <Content Include="Content\Front\Product65_resized.png" />
+    <Content Include="Content\Front\Product66_resized.png" />
+    <Content Include="Content\Front\Product67_resized.png" />
+    <Content Include="Content\Front\Product68_resized.png" />
+    <Content Include="Content\Front\Product69_resized.png" />
+    <Content Include="Content\Front\Product70_resized.png" />
+    <Content Include="Content\Front\Product71_resized.png" />
+    <Content Include="Content\Front\Product72_resized.png" />
+    <Content Include="Content\Front\Product73_resized.png" />
+    <Content Include="Content\Front\Product74_resized.png" />
+    <Content Include="Content\Front\Product75_resized.png" />
+    <Content Include="Content\Front\Product76_resized.png" />
+    <Content Include="Content\Front\Product77_resized.png" />
+    <Content Include="Content\Front\Product78_resized.png" />
+    <Content Include="Content\Front\Product79_resized.png" />
+    <Content Include="Content\Front\Product80_resized.png" />
+    <Content Include="Content\Front\products.css" />
+    <Content Include="Content\Front\product_details.gif" />
+    <Content Include="Content\Front\product_link-span.gif" />
+    <Content Include="Content\Front\Quattrocento_Sans.css" />
+    <Content Include="Content\Front\remove_from_cart.png" />
+    <Content Include="Content\Front\scripts.js" />
+    <Content Include="Content\Front\search-button.gif" />
+    <Content Include="Content\Front\sectiontableheader_th.gif" />
+    <Content Include="Content\Front\sectiontableheader_tr.gif" />
+    <Content Include="Content\Front\select_left.png" />
+    <Content Include="Content\Front\select_right.png" />
+    <Content Include="Content\Front\show_image_in_imgtag.php-filename=resized-Product01_resized.png&amp;newxsize=128&amp;newysize=178&amp;fileout=.png" />
+    <Content Include="Content\Front\show_image_in_imgtag.php-filename=resized-Product02_resized.png&amp;newxsize=128&amp;newysize=178&amp;fileout=.png" />
+    <Content Include="Content\Front\show_image_in_imgtag.php-filename=resized-Product03_resized.png&amp;newxsize=128&amp;newysize=178&amp;fileout=.png" />
+    <Content Include="Content\Front\show_image_in_imgtag.php-filename=resized-Product04_resized.png&amp;newxsize=128&amp;newysize=178&amp;fileout=.png" />
+    <Content Include="Content\Front\show_image_in_imgtag.php-filename=resized-Product05_resized.png&amp;newxsize=128&amp;newysize=178&amp;fileout=.png" />
+    <Content Include="Content\Front\show_image_in_imgtag.php-filename=resized-Product06_resized.png&amp;newxsize=128&amp;newysize=178&amp;fileout=.png" />
+    <Content Include="Content\Front\show_image_in_imgtag.php-filename=resized-Product73_resized.png&amp;newxsize=128&amp;newysize=178&amp;fileout=.png" />
+    <Content Include="Content\Front\show_image_in_imgtag.php-filename=resized-Product74_resized.png&amp;newxsize=128&amp;newysize=178&amp;fileout=.png" />
+    <Content Include="Content\Front\show_image_in_imgtag.php-filename=resized-Product75_resized.png&amp;newxsize=128&amp;newysize=178&amp;fileout=.png" />
+    <Content Include="Content\Front\show_image_in_imgtag.php-filename=resized-Product76_resized.png&amp;newxsize=128&amp;newysize=178&amp;fileout=.png" />
+    <Content Include="Content\Front\show_image_in_imgtag.php-filename=resized-Product77_resized.png&amp;newxsize=128&amp;newysize=178&amp;fileout=.png" />
+    <Content Include="Content\Front\show_image_in_imgtag.php-filename=resized-Product78_resized.png&amp;newxsize=128&amp;newysize=178&amp;fileout=.png" />
+    <Content Include="Content\Front\show_image_in_imgtag.php-filename=resized-Product79_resized.png&amp;newxsize=128&amp;newysize=178&amp;fileout=.png" />
+    <Content Include="Content\Front\show_image_in_imgtag.php-filename=resized-Product80_resized.png&amp;newxsize=128&amp;newysize=178&amp;fileout=.png" />
+    <Content Include="Content\Front\slimbox.css" />
+    <Content Include="Content\Front\sort_asc.png" />
+    <Content Include="Content\Front\spinner.gif" />
+    <Content Include="Content\Front\sprite-1.png" />
+    <Content Include="Content\Front\sprite-2.png" />
+    <Content Include="Content\Front\sprite-3.png" />
+    <Content Include="Content\Front\sprite-4.png" />
+    <Content Include="Content\Front\sprite-5.png" />
+    <Content Include="Content\Front\sub-minus.gif" />
+    <Content Include="Content\Front\sub-plus.gif" />
+    <Content Include="Content\Front\t.gif" />
+    <Content Include="Content\Front\tabs.js" />
+    <Content Include="Content\Front\template.css" />
+    <Content Include="Content\Front\timeline.5e1325f111fbc177d1261f5d81cceeeb.2x.css" />
+    <Content Include="Content\Front\timeline.5e1325f111fbc177d1261f5d81cceeeb.2x.rtl.css" />
+    <Content Include="Content\Front\timeline.5e1325f111fbc177d1261f5d81cceeeb.default.css" />
+    <Content Include="Content\Front\timeline.5e1325f111fbc177d1261f5d81cceeeb.default.rtl.css" />
+    <Content Include="Content\Front\timeline.5e1325f111fbc177d1261f5d81cceeeb.gif.css" />
+    <Content Include="Content\Front\timeline.5e1325f111fbc177d1261f5d81cceeeb.gif.rtl.css" />
+    <Content Include="Content\Front\timeline.css" />
+    <Content Include="Content\Front\title.gif" />
+    <Content Include="Content\Front\transparent.gif" />
+    <Content Include="Content\Front\update_quantity_cart.png" />
+    <Content Include="Content\Front\up_small.gif" />
+    <Content Include="Content\Front\validate.js" />
+    <Content Include="Content\Front\virtuemart.css" />
+    <Content Include="Content\Front\vmRecentDetail-marker.png" />
+    <Content Include="Content\Front\warning.png" />
+    <Content Include="Content\Front\widgets.js" />
+    <Content Include="Content\Front\_product_linkmarker.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Global.asax" />
+    <Content Include="_Upload\HinhAnh\default.jpg" />
+    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\Shared\_FrontLayout.cshtml" />
+    <Content Include="Views\FrontHome\Index.cshtml" />
+    <Content Include="Views\FrontProducts\Index.cshtml" />
+    <Content Include="Views\FrontProductDetail\Index.cshtml" />
+    <Content Include="Views\FrontCart\Index.cshtml" />
+    <Content Include="Views\FrontCart\CheckOut.cshtml" />
+    <Content Include="Views\FrontCart\Finish.cshtml" />
+    <Content Include="Views\ImageUpload\Index.cshtml" />
+    <Content Include="Views\FrontSearch\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseClass\BaseClass.csproj">
+      <Project>{c8255293-ebc6-48a6-8e7c-9969fa85d1b6}</Project>
+      <Name>BaseClass</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:12430/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

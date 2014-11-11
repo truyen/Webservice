@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CuaHangDTDDModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="CuaHangDTDDEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="ChiTiet_DonHang" EntityType="CuaHangDTDDModel.ChiTiet_DonHang" />
+    <EntitySet Name="ChiTiet_NhapHang" EntityType="CuaHangDTDDModel.ChiTiet_NhapHang" />
+    <EntitySet Name="DonHangs" EntityType="CuaHangDTDDModel.DonHang" />
+    <EntitySet Name="HangSXes" EntityType="CuaHangDTDDModel.HangSX" />
+    <EntitySet Name="HinhAnhs" EntityType="CuaHangDTDDModel.HinhAnh" />
+    <EntitySet Name="MauSacs" EntityType="CuaHangDTDDModel.MauSac" />
+    <EntitySet Name="NhanViens" EntityType="CuaHangDTDDModel.NhanVien" />
+    <EntitySet Name="NhapHangs" EntityType="CuaHangDTDDModel.NhapHang" />
+    <EntitySet Name="SanPham_ChiTiet" EntityType="CuaHangDTDDModel.SanPham_ChiTiet" />
+    <EntitySet Name="SanPhams" EntityType="CuaHangDTDDModel.SanPham" />
+    <EntitySet Name="TonKhoes" EntityType="CuaHangDTDDModel.TonKho" />
+    <AssociationSet Name="FK_dbo_ChiTiet_DonHang_dbo_DonHangs_donhang_id" Association="CuaHangDTDDModel.FK_dbo_ChiTiet_DonHang_dbo_DonHangs_donhang_id">
+      <End Role="DonHangs" EntitySet="DonHangs" />
+      <End Role="ChiTiet_DonHang" EntitySet="ChiTiet_DonHang" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ChiTiet_DonHang_dbo_SanPham_ChiTiet_sanpham_chitiet_id" Association="CuaHangDTDDModel.FK_dbo_ChiTiet_DonHang_dbo_SanPham_ChiTiet_sanpham_chitiet_id">
+      <End Role="SanPham_ChiTiet" EntitySet="SanPham_ChiTiet" />
+      <End Role="ChiTiet_DonHang" EntitySet="ChiTiet_DonHang" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ChiTiet_NhapHang_dbo_NhapHangs_nhaphang_id" Association="CuaHangDTDDModel.FK_dbo_ChiTiet_NhapHang_dbo_NhapHangs_nhaphang_id">
+      <End Role="NhapHangs" EntitySet="NhapHangs" />
+      <End Role="ChiTiet_NhapHang" EntitySet="ChiTiet_NhapHang" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_ChiTiet_NhapHang_dbo_SanPham_ChiTiet_sanpham_chitiet_id" Association="CuaHangDTDDModel.FK_dbo_ChiTiet_NhapHang_dbo_SanPham_ChiTiet_sanpham_chitiet_id">
+      <End Role="SanPham_ChiTiet" EntitySet="SanPham_ChiTiet" />
+      <End Role="ChiTiet_NhapHang" EntitySet="ChiTiet_NhapHang" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_SanPhams_dbo_HangSXes_hangsx_id" Association="CuaHangDTDDModel.FK_dbo_SanPhams_dbo_HangSXes_hangsx_id">
+      <End Role="HangSXes" EntitySet="HangSXes" />
+      <End Role="SanPhams" EntitySet="SanPhams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_HinhAnhs_dbo_SanPhams_sanpham_id" Association="CuaHangDTDDModel.FK_dbo_HinhAnhs_dbo_SanPhams_sanpham_id">
+      <End Role="SanPhams" EntitySet="SanPhams" />
+      <End Role="HinhAnhs" EntitySet="HinhAnhs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_SanPham_ChiTiet_dbo_MauSacs_mausac_id" Association="CuaHangDTDDModel.FK_dbo_SanPham_ChiTiet_dbo_MauSacs_mausac_id">
+      <End Role="MauSacs" EntitySet="MauSacs" />
+      <End Role="SanPham_ChiTiet" EntitySet="SanPham_ChiTiet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_SanPham_ChiTiet_dbo_SanPhams_sanpham_id" Association="CuaHangDTDDModel.FK_dbo_SanPham_ChiTiet_dbo_SanPhams_sanpham_id">
+      <End Role="SanPhams" EntitySet="SanPhams" />
+      <End Role="SanPham_ChiTiet" EntitySet="SanPham_ChiTiet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_TonKhoes_dbo_SanPham_ChiTiet_sanpham_chitiet_id" Association="CuaHangDTDDModel.FK_dbo_TonKhoes_dbo_SanPham_ChiTiet_sanpham_chitiet_id">
+      <End Role="SanPham_ChiTiet" EntitySet="SanPham_ChiTiet" />
+      <End Role="TonKhoes" EntitySet="TonKhoes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ChiTiet_DonHang">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="soluong" Type="Int32" Nullable="false" />
+    <Property Name="dongia" Type="Int32" Nullable="false" />
+    <Property Name="donhang_id" Type="Int32" />
+    <Property Name="sanpham_chitiet_id" Type="Int32" />
+    <NavigationProperty Name="DonHang" Relationship="CuaHangDTDDModel.FK_dbo_ChiTiet_DonHang_dbo_DonHangs_donhang_id" FromRole="ChiTiet_DonHang" ToRole="DonHangs" />
+    <NavigationProperty Name="SanPham_ChiTiet" Relationship="CuaHangDTDDModel.FK_dbo_ChiTiet_DonHang_dbo_SanPham_ChiTiet_sanpham_chitiet_id" FromRole="ChiTiet_DonHang" ToRole="SanPham_ChiTiet" />
+  </EntityType>
+  <EntityType Name="ChiTiet_NhapHang">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="soluong" Type="Int32" Nullable="false" />
+    <Property Name="dongia" Type="Int32" Nullable="false" />
+    <Property Name="nhaphang_id" Type="Int32" />
+    <Property Name="sanpham_chitiet_id" Type="Int32" />
+    <NavigationProperty Name="NhapHang" Relationship="CuaHangDTDDModel.FK_dbo_ChiTiet_NhapHang_dbo_NhapHangs_nhaphang_id" FromRole="ChiTiet_NhapHang" ToRole="NhapHangs" />
+    <NavigationProperty Name="SanPham_ChiTiet" Relationship="CuaHangDTDDModel.FK_dbo_ChiTiet_NhapHang_dbo_SanPham_ChiTiet_sanpham_chitiet_id" FromRole="ChiTiet_NhapHang" ToRole="SanPham_ChiTiet" />
+  </EntityType>
+  <EntityType Name="DonHang">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="ngay" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="tongtien" Type="Int32" Nullable="false" />
+    <Property Name="dagiaohang" Type="Boolean" Nullable="false" />
+    <Property Name="active" Type="Boolean" Nullable="false" />
+    <Property Name="kh_ten" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="kh_diachi" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="kh_email" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="kh_sdt" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="ChiTiet_DonHang" Relationship="CuaHangDTDDModel.FK_dbo_ChiTiet_DonHang_dbo_DonHangs_donhang_id" FromRole="DonHangs" ToRole="ChiTiet_DonHang" />
+  </EntityType>
+  <EntityType Name="HangSX">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="ten" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="active" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="SanPhams" Relationship="CuaHangDTDDModel.FK_dbo_SanPhams_dbo_HangSXes_hangsx_id" FromRole="HangSXes" ToRole="SanPhams" />
+  </EntityType>
+  <EntityType Name="HinhAnh">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="duongdan" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="duongdan_thumb" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="macdinh" Type="Boolean" Nullable="false" />
+    <Property Name="sanpham_id" Type="Int32" />
+    <NavigationProperty Name="SanPham" Relationship="CuaHangDTDDModel.FK_dbo_HinhAnhs_dbo_SanPhams_sanpham_id" FromRole="HinhAnhs" ToRole="SanPhams" />
+  </EntityType>
+  <EntityType Name="MauSac">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="giatri" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="active" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="SanPham_ChiTiet" Relationship="CuaHangDTDDModel.FK_dbo_SanPham_ChiTiet_dbo_MauSacs_mausac_id" FromRole="MauSacs" ToRole="SanPham_ChiTiet" />
+  </EntityType>
+  <EntityType Name="NhanVien">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="ten" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="pass" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="quyen" Type="Int32" />
+  </EntityType>
+  <EntityType Name="NhapHang">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="ngay" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="tongtien" Type="Int32" Nullable="false" />
+    <Property Name="active" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="ChiTiet_NhapHang" Relationship="CuaHangDTDDModel.FK_dbo_ChiTiet_NhapHang_dbo_NhapHangs_nhaphang_id" FromRole="NhapHangs" ToRole="ChiTiet_NhapHang" />
+  </EntityType>
+  <EntityType Name="SanPham_ChiTiet">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="active" Type="Boolean" Nullable="false" />
+    <Property Name="tonkho" Type="Int32" Nullable="false" />
+    <Property Name="mausac_id" Type="Int32" />
+    <Property Name="sanpham_id" Type="Int32" />
+    <NavigationProperty Name="ChiTiet_DonHang" Relationship="CuaHangDTDDModel.FK_dbo_ChiTiet_DonHang_dbo_SanPham_ChiTiet_sanpham_chitiet_id" FromRole="SanPham_ChiTiet" ToRole="ChiTiet_DonHang" />
+    <NavigationProperty Name="ChiTiet_NhapHang" Relationship="CuaHangDTDDModel.FK_dbo_ChiTiet_NhapHang_dbo_SanPham_ChiTiet_sanpham_chitiet_id" FromRole="SanPham_ChiTiet" ToRole="ChiTiet_NhapHang" />
+    <NavigationProperty Name="MauSac" Relationship="CuaHangDTDDModel.FK_dbo_SanPham_ChiTiet_dbo_MauSacs_mausac_id" FromRole="SanPham_ChiTiet" ToRole="MauSacs" />
+    <NavigationProperty Name="SanPham" Relationship="CuaHangDTDDModel.FK_dbo_SanPham_ChiTiet_dbo_SanPhams_sanpham_id" FromRole="SanPham_ChiTiet" ToRole="SanPhams" />
+    <NavigationProperty Name="TonKhoes" Relationship="CuaHangDTDDModel.FK_dbo_TonKhoes_dbo_SanPham_ChiTiet_sanpham_chitiet_id" FromRole="SanPham_ChiTiet" ToRole="TonKhoes" />
+  </EntityType>
+  <EntityType Name="SanPham">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="masp" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ten" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="mota" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="gia" Type="Int32" Nullable="false" />
+    <Property Name="active" Type="Boolean" Nullable="false" />
+    <Property Name="hangsx_id" Type="Int32" />
+    <NavigationProperty Name="HangSX" Relationship="CuaHangDTDDModel.FK_dbo_SanPhams_dbo_HangSXes_hangsx_id" FromRole="SanPhams" ToRole="HangSXes" />
+    <NavigationProperty Name="HinhAnhs" Relationship="CuaHangDTDDModel.FK_dbo_HinhAnhs_dbo_SanPhams_sanpham_id" FromRole="SanPhams" ToRole="HinhAnhs" />
+    <NavigationProperty Name="SanPham_ChiTiet" Relationship="CuaHangDTDDModel.FK_dbo_SanPham_ChiTiet_dbo_SanPhams_sanpham_id" FromRole="SanPhams" ToRole="SanPham_ChiTiet" />
+  </EntityType>
+  <EntityType Name="TonKho">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="soluong" Type="Int32" Nullable="false" />
+    <Property Name="ngay" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="sanpham_chitiet_id" Type="Int32" />
+    <NavigationProperty Name="SanPham_ChiTiet" Relationship="CuaHangDTDDModel.FK_dbo_TonKhoes_dbo_SanPham_ChiTiet_sanpham_chitiet_id" FromRole="TonKhoes" ToRole="SanPham_ChiTiet" />
+  </EntityType>
+  <Association Name="FK_dbo_ChiTiet_DonHang_dbo_DonHangs_donhang_id">
+    <End Role="DonHangs" Type="CuaHangDTDDModel.DonHang" Multiplicity="0..1" />
+    <End Role="ChiTiet_DonHang" Type="CuaHangDTDDModel.ChiTiet_DonHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DonHangs">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ChiTiet_DonHang">
+        <PropertyRef Name="donhang_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ChiTiet_DonHang_dbo_SanPham_ChiTiet_sanpham_chitiet_id">
+    <End Role="SanPham_ChiTiet" Type="CuaHangDTDDModel.SanPham_ChiTiet" Multiplicity="0..1" />
+    <End Role="ChiTiet_DonHang" Type="CuaHangDTDDModel.ChiTiet_DonHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SanPham_ChiTiet">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ChiTiet_DonHang">
+        <PropertyRef Name="sanpham_chitiet_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ChiTiet_NhapHang_dbo_NhapHangs_nhaphang_id">
+    <End Role="NhapHangs" Type="CuaHangDTDDModel.NhapHang" Multiplicity="0..1" />
+    <End Role="ChiTiet_NhapHang" Type="CuaHangDTDDModel.ChiTiet_NhapHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhapHangs">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ChiTiet_NhapHang">
+        <PropertyRef Name="nhaphang_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_ChiTiet_NhapHang_dbo_SanPham_ChiTiet_sanpham_chitiet_id">
+    <End Role="SanPham_ChiTiet" Type="CuaHangDTDDModel.SanPham_ChiTiet" Multiplicity="0..1" />
+    <End Role="ChiTiet_NhapHang" Type="CuaHangDTDDModel.ChiTiet_NhapHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SanPham_ChiTiet">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ChiTiet_NhapHang">
+        <PropertyRef Name="sanpham_chitiet_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_SanPhams_dbo_HangSXes_hangsx_id">
+    <End Role="HangSXes" Type="CuaHangDTDDModel.HangSX" Multiplicity="0..1" />
+    <End Role="SanPhams" Type="CuaHangDTDDModel.SanPham" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HangSXes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="SanPhams">
+        <PropertyRef Name="hangsx_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_HinhAnhs_dbo_SanPhams_sanpham_id">
+    <End Role="SanPhams" Type="CuaHangDTDDModel.SanPham" Multiplicity="0..1" />
+    <End Role="HinhAnhs" Type="CuaHangDTDDModel.HinhAnh" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SanPhams">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="HinhAnhs">
+        <PropertyRef Name="sanpham_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_SanPham_ChiTiet_dbo_MauSacs_mausac_id">
+    <End Role="MauSacs" Type="CuaHangDTDDModel.MauSac" Multiplicity="0..1" />
+    <End Role="SanPham_ChiTiet" Type="CuaHangDTDDModel.SanPham_ChiTiet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MauSacs">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="SanPham_ChiTiet">
+        <PropertyRef Name="mausac_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_SanPham_ChiTiet_dbo_SanPhams_sanpham_id">
+    <End Role="SanPhams" Type="CuaHangDTDDModel.SanPham" Multiplicity="0..1" />
+    <End Role="SanPham_ChiTiet" Type="CuaHangDTDDModel.SanPham_ChiTiet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SanPhams">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="SanPham_ChiTiet">
+        <PropertyRef Name="sanpham_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_TonKhoes_dbo_SanPham_ChiTiet_sanpham_chitiet_id">
+    <End Role="SanPham_ChiTiet" Type="CuaHangDTDDModel.SanPham_ChiTiet" Multiplicity="0..1" />
+    <End Role="TonKhoes" Type="CuaHangDTDDModel.TonKho" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SanPham_ChiTiet">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="TonKhoes">
+        <PropertyRef Name="sanpham_chitiet_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

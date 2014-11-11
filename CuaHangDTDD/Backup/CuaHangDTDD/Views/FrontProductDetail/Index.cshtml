@@ -1,0 +1,224 @@
+﻿@{
+    //var HangSX_List = (List<BaseClass.Models.HangSX>)ViewBag.HangSX_List;
+    var sanpham = (BaseClass.Models.SanPham)ViewBag.sanpham;
+    var giohang = (BaseClass.Models.DonHang)ViewBag.giohang;
+}
+@{
+    //xử lý tồn kho TEMP    
+    foreach(var item in sanpham.ds_sanpham_chitiet)
+    {
+        //lấy sanpham chi tiet trong giohang trung voi item dang xet
+        var tmp = giohang.ds_chitiet_donhang.Where(x => x.sanpham_chitiet.id == item.id).FirstOrDefault();
+        //mếu đã có trong giỏ hàng thì phải trừ bớt tồn kho
+        if(tmp!=null)
+        {
+            item.tonkho -= tmp.soluong;
+            if (item.tonkho <= 0)
+            {
+                item.tonkho = 0;
+            }
+        }
+    }
+    string frontcart_link = Url.Action("Index","FrontCart");
+}
+<script type="text/javascript">
+    var chitietsp_list = new Array();
+    var chitietsp;
+    @if(sanpham.ds_sanpham_chitiet.Count==0) 
+    {
+        <text>
+        chitietsp=new Object();
+        chitietsp.id="0";
+        chitietsp.mausac_ten="(Chưa có)";
+        chitietsp.tonkho = 0;
+        chitietsp.sl_trong_giohang = 0;
+        chitietsp_list.push(chitietsp);
+        </text>
+    }
+    @foreach(var item in sanpham.ds_sanpham_chitiet)
+    {
+        var tmp = giohang.ds_chitiet_donhang.Where(x => x.sanpham_chitiet.id == item.id).FirstOrDefault();
+        int sl_trong_giohang = tmp== null ? 0 : tmp.soluong;
+        <text>
+        chitietsp=new Object();
+        chitietsp.id=@item.id ;
+        chitietsp.mausac_ten="@item.mausac.giatri" ;
+        chitietsp.tonkho = @item.tonkho ;
+        chitietsp.sl_trong_giohang = @sl_trong_giohang ;
+        chitietsp_list.push(chitietsp);
+        </text>
+    }
+			 
+    $j(document).ready(function() {
+    
+        for (var i=0; i<chitietsp_list.length; i++)
+        {
+            $j('#qd_chitietsp').append('<option value="'+chitietsp_list[i].id+'">'+chitietsp_list[i].mausac_ten+'</option>');
+        }
+        validate_on_submit();
+    });
+    
+    function validate_on_submit()
+    {
+        var value = $j("#qd_sanpham_soluong").val();
+        var obj = get_current_selected_chitietsp_obj();
+        if(obj.id==0)
+        {
+            $j('#qd_message').html("Sản phẩm chưa cho phép đặt hàng");
+            return false;
+        }
+        else if(value<=0 || isNaN(value))
+        {
+            //action for hết hàng rồi pa
+            $j('#qd_message').html("Số lượng đặt không hợp lệ");
+            $j('#qd_dathang').attr("disabled", "disabled");
+            return false;
+        }
+        else if(value>obj.tonkho && obj.tonkho>0)
+        {
+            $j('#qd_message').html("Màu sắc đang chọn hiện cho phép đặt tối đa "+obj.tonkho+" sản phẩm");
+            if(obj.sl_trong_giohang>0)
+            {
+                $j('#qd_message').html($j('#qd_message').html() +"<br>(Trong <a href="+"@frontcart_link"+">giỏ hàng</a> hiện đã có "+obj.sl_trong_giohang+" sản phẩm màu này rồi)");
+            }
+            $j('#qd_dathang').attr("disabled", "disabled");
+            return false;
+        }
+        else if(obj.tonkho==0)
+        {
+            $j('#qd_message').html("Màu sắc đang chọn hiện đã hết hàng");
+            if(obj.sl_trong_giohang>0)
+            {
+                $j('#qd_message').html($j('#qd_message').html() +"<br>(Trong <a href="+"@frontcart_link"+">giỏ hàng</a> hiện đã có "+obj.sl_trong_giohang+" sản phẩm màu này rồi)");
+            }
+            $j('#qd_dathang').attr("disabled", "disabled");
+            return false;
+        }
+        else
+        {
+            $j('#qd_message').html("");
+            $j('#qd_dathang').removeAttr('disabled');
+            return true;
+        }
+        return false;
+    }
+    function get_current_selected_chitietsp_id()
+    {
+        var selectBox = document.getElementById("qd_chitietsp");
+        var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+        return selectedValue;
+    }
+    function get_current_selected_chitietsp_obj()
+    {
+        var chitietsp_id = get_current_selected_chitietsp_id();
+        var obj;
+        for (var i=0; i<chitietsp_list.length; i++)
+        {
+            if(chitietsp_list[i].id==chitietsp_id)
+            {
+                obj = chitietsp_list[i];
+            }
+        }
+        return obj;
+    }
+</script>
+
+<div class="container">
+    <div class="content-indent">
+        <div id="vmMainPage">
+            <div class="Product-border">
+                <div class="Product-border-conent">
+                    <div class="wrapper">
+                        <div class="float-left">
+                            <div class="browseProductImageContainer">
+                                <div class="browseProductImage Fly">
+                                    <a href="@sanpham._get_hinhanh_macdinh()._get_full_duongdan()" title="dolor" rel="prettyPhoto">
+                                        <img src="@sanpham._get_hinhanh_macdinh()._get_full_duongdan_thumb()" style="max-width:220px;; max-height:308px; width:auto; height:auto;" alt="dolor" border="0"><br>
+                                        Xem hình lớn hơn
+                                    </a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="floatElement">
+                            <h2 class="browseProductTitle">
+                                <span title="dolor" class="product_name">@sanpham.ten</span> 				                        </h2>
+                            <div class="product-divider">
+                                <div class="browsePriceContainer">
+                                    <span class="productPrice">@sanpham._get_gia() VNĐ			</span>
+
+                                </div>
+                                
+                                <div class="vmCartContainer1" style="width: 145px;">
+
+                                    <div class="vmCartContainer">
+
+                                        <form action="@Url.Action("Submit","FrontProductDetail")" method="post" name="addtocart" class="addtocart_form" onsubmit="return validate_on_submit()">
+                                            <!-- quocdunginfo -->
+                                            <div style="clear:both"></div>
+                                            <div style="float:left; margin-top:22px;">
+                                                <span title="dolor" class="product_name">Màu:</span>
+                                                <select id="qd_chitietsp" name="sanpham_chitietsp_id" onchange="validate_on_submit()">
+                                                    
+                                                </select>
+                                            </div>
+                                            <div style="clear:both"></div>
+                                            <!-- end quocdunginfo -->
+                                            <div class="vmCartDetails">
+                                                
+                                            </div>
+
+                                            <div style="width: auto;">
+                                                <span class="quantity" style="display: block;">
+                                                    <label for="qd_sanpham_soluong" class="quantity_box">Số lượng:&nbsp;</label>
+                                                    <input type="text" class="inputboxquantity" size="4" id="qd_sanpham_soluong" name="sanpham_soluong" value="1" onkeyup="validate_on_submit()" >
+                                                    <input type="button" class="quantity_box_button quantity_box_button_up png" onclick="var qty_el = document.getElementById('qd_sanpham_soluong'); var qty = qty_el.value; if( !isNaN( qty )) qty_el.value++; validate_on_submit();return false;">
+                                                    <input type="button" class="quantity_box_button quantity_box_button_down png" onclick="var qty_el = document.getElementById('qd_sanpham_soluong'); var qty = qty_el.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 0 ) qty_el.value--;validate_on_submit();return false;"></span>
+                                            </div>
+
+                                            
+                                            <input id="qd_dathang" type="submit" value="Mua hàng" class="addtocart_button" title="Add to Cart">
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="clear"></div>
+                                <span id="qd_message" style="float:right;padding-top:10px; color:red"></span>
+                            </div>
+                            <div class="clear"></div>
+                            
+                            <div class="description" style="display:none">
+                                <div class="desc">
+                                    
+                                </div>
+                            </div>
+
+                            <div class="ask_seller nobutton" style="background: none;">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="Fly-tabs" style="visibility: visible;">
+                        <dl class="tabs" id="pane">
+                            <dt id="tab3" class="open" style="cursor: pointer;"><span><span>Chi tiết cấu hình</span></span></dt>
+                        </dl>
+                        <div class="current">
+                            <dd style="display: block;">
+                                <div>
+                                    <!-- List of product reviews -->
+                                    @sanpham._get_mota_lite(500)
+                                </div>
+                            </dd>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="statusBox" style="text-align: center; display: none; visibility: hidden;"></div>
+        </div>
+
+    </div>
+</div>

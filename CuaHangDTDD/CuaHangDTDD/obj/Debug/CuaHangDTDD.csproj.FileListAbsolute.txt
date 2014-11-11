@@ -1,0 +1,117 @@
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\CuaHangDTDD\bin\CuaHangDTDD.dll
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\CuaHangDTDD\bin\CuaHangDTDD.pdb
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\CuaHangDTDD\bin\Com.dll
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\CuaHangDTDD\bin\EntityFramework.dll
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\CuaHangDTDD\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\CuaHangDTDD\bin\System.Web.Helpers.dll
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\CuaHangDTDD\bin\System.Web.Mvc.dll
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\CuaHangDTDD\bin\System.Web.Providers.dll
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\CuaHangDTDD\bin\System.Web.Razor.dll
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\CuaHangDTDD\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\CuaHangDTDD\bin\System.Web.WebPages.dll
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\CuaHangDTDD\bin\System.Web.WebPages.Razor.dll
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\CuaHangDTDD\bin\Com.pdb
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\CuaHangDTDD\bin\EntityFramework.xml
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\CuaHangDTDD\bin\System.Web.Helpers.xml
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\CuaHangDTDD\bin\System.Web.Mvc.xml
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\CuaHangDTDD\bin\System.Web.Razor.xml
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\CuaHangDTDD\bin\System.Web.WebPages.xml
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\CuaHangDTDD\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\CuaHangDTDD\bin\System.Web.WebPages.Razor.xml
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\CuaHangDTDD\obj\Debug\CuaHangDTDD.csprojResolveAssemblyReference.cache
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\CuaHangDTDD\obj\Debug\CuaHangDTDD.dll
+C:\Users\Nguyen Tuan Anh\Documents\GitHub\CuaHangDTDD\CuaHangDTDD\obj\Debug\CuaHangDTDD.pdb
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\CuaHangDTDD\bin\CuaHangDTDD.dll
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\CuaHangDTDD\bin\CuaHangDTDD.pdb
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\CuaHangDTDD\bin\Com.dll
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\CuaHangDTDD\bin\EntityFramework.dll
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\CuaHangDTDD\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\CuaHangDTDD\bin\System.Web.Helpers.dll
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\CuaHangDTDD\bin\System.Web.Mvc.dll
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\CuaHangDTDD\bin\System.Web.Providers.dll
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\CuaHangDTDD\bin\System.Web.Razor.dll
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\CuaHangDTDD\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\CuaHangDTDD\bin\System.Web.WebPages.dll
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\CuaHangDTDD\bin\System.Web.WebPages.Razor.dll
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\CuaHangDTDD\bin\Com.pdb
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\CuaHangDTDD\bin\EntityFramework.xml
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\CuaHangDTDD\bin\System.Web.Helpers.xml
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\CuaHangDTDD\bin\System.Web.Mvc.xml
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\CuaHangDTDD\bin\System.Web.Razor.xml
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\CuaHangDTDD\bin\System.Web.WebPages.xml
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\CuaHangDTDD\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\CuaHangDTDD\bin\System.Web.WebPages.Razor.xml
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\CuaHangDTDD\obj\Debug\CuaHangDTDD.csprojResolveAssemblyReference.cache
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\CuaHangDTDD\obj\Debug\CuaHangDTDD.dll
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2012\Projects\CuaHangDTDD\CuaHangDTDD\obj\Debug\CuaHangDTDD.pdb
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\CuaHangDTDD\bin\CuaHangDTDD.dll.config
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\CuaHangDTDD\bin\CuaHangDTDD.dll
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\CuaHangDTDD\bin\CuaHangDTDD.pdb
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\CuaHangDTDD\bin\Com.dll
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\CuaHangDTDD\bin\EntityFramework.dll
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\CuaHangDTDD\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\CuaHangDTDD\bin\System.Web.Helpers.dll
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\CuaHangDTDD\bin\System.Web.Mvc.dll
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\CuaHangDTDD\bin\System.Web.Providers.dll
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\CuaHangDTDD\bin\System.Web.Razor.dll
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\CuaHangDTDD\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\CuaHangDTDD\bin\System.Web.WebPages.dll
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\CuaHangDTDD\bin\System.Web.WebPages.Razor.dll
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\CuaHangDTDD\bin\Com.pdb
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\CuaHangDTDD\bin\EntityFramework.xml
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\CuaHangDTDD\bin\System.Web.Helpers.xml
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\CuaHangDTDD\bin\System.Web.Mvc.xml
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\CuaHangDTDD\bin\System.Web.Razor.xml
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\CuaHangDTDD\bin\System.Web.WebPages.xml
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\CuaHangDTDD\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\CuaHangDTDD\bin\System.Web.WebPages.Razor.xml
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\CuaHangDTDD\obj\Debug\CuaHangDTDD.csprojResolveAssemblyReference.cache
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\CuaHangDTDD\obj\Debug\CuaHangDTDD.dll
+C:\Users\Nguyen Tuan Anh\Documents\Visual Studio 2013\Projects\CuaHangDTDD\CuaHangDTDD\obj\Debug\CuaHangDTDD.pdb
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\obj\Debug\CuaHangDTDD.csprojResolveAssemblyReference.cache
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\CuaHangDTDD.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\CuaHangDTDD.pdb
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\AjaxControlToolkit.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\AjaxMin.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\Com.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\EntityFramework.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\FredCK.FCKeditorV2.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\HtmlAgilityPack.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\System.Web.Helpers.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\System.Web.Mvc.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\System.Web.Providers.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\System.Web.Razor.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\System.Web.WebPages.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\System.Web.WebPages.Razor.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\Com.pdb
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\AjaxControlToolkit.pdb
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\EntityFramework.xml
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\System.Web.Helpers.xml
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\System.Web.Mvc.xml
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\System.Web.Razor.xml
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\System.Web.WebPages.xml
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\System.Web.WebPages.Razor.xml
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\ar\AjaxControlToolkit.resources.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\cs\AjaxControlToolkit.resources.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\de\AjaxControlToolkit.resources.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\es\AjaxControlToolkit.resources.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\fr\AjaxControlToolkit.resources.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\he\AjaxControlToolkit.resources.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\hi\AjaxControlToolkit.resources.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\it\AjaxControlToolkit.resources.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\ja\AjaxControlToolkit.resources.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\ko\AjaxControlToolkit.resources.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\nl\AjaxControlToolkit.resources.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\pl\AjaxControlToolkit.resources.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\pt\AjaxControlToolkit.resources.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\ru\AjaxControlToolkit.resources.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\tr-TR\AjaxControlToolkit.resources.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\zh-CHS\AjaxControlToolkit.resources.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\bin\zh-CHT\AjaxControlToolkit.resources.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\obj\Debug\CuaHangDTDD.dll
+C:\Users\Danh\Desktop\CuaHangDTDD\CuaHangDTDD\obj\Debug\CuaHangDTDD.pdb

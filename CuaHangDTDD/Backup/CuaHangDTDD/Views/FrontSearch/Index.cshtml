@@ -1,0 +1,244 @@
+﻿@{
+    ViewBag.Title = "Tìm kiếm";
+    var pagination = (BaseClass._Library.PaginationLibrary)ViewBag.pagination;
+    var SanPham_List = (List<BaseClass.Models.SanPham>)ViewBag.SanPham_List;
+    var HangSX_List = (List<BaseClass.Models.HangSX>)ViewBag.HangSX_List;
+    var timkiem_sanpham = (HttpCookie)ViewBag.timkiem_sanpham;
+}
+
+<div class="container">
+    <div class="content-indent">
+        <div id="vmMainPage">
+
+            <div class="clear">
+
+                <div class="buttons_heading">
+                    
+                </div>
+                <h3 class="categoryName">Tìm kiếm nâng cao</h3>
+
+                <div style="text-align: center;">
+                </div>
+            </div>
+            <div class="orderby_form">
+                <!-- ORDER BY .... FORM -->
+                <form action="@Url.Action("Submit","FrontSearch")" method="post" name="order" class="orderby_form" style="height:180px">
+                    <style type="text/css">
+                        .orderby_form span {
+                            display:inline-block;
+                            width:100px;
+                        }
+                        .orderby_form .qd_br {
+                            height: 10px;
+                            clear:both;
+                        }
+                    </style>
+
+                    <span>Tên sản phẩm:</span>
+                    <input name="ten" type="text" value="@timkiem_sanpham["ten"]" style="width:250px"/>
+                    <div class="qd_br"></div>
+
+                    <span>Giá từ </span>
+                    <input name="gia_from" type="text" value="@timkiem_sanpham["gia_from"]" style="width:100px"/>
+                    <span style="text-align:center; width: 30px">đến </span>
+                    <input name="gia_to" type="text" value="@timkiem_sanpham["gia_to"]" style="width:100px"/>
+                    <div class="qd_br"></div>
+
+                    <span>Hãng sản xuất: </span>
+                    <select name="hangsx_id" style="width: auto">
+                        <option value="0" @if (timkiem_sanpham["hangsx_id"].Equals(""))
+                                         {<text>selected="selected"</text>}>(Tất cả)</option>
+                        @foreach(var item in HangSX_List)
+                        {
+                        <option value="@item.id" @if(item.id.ToString().Equals(timkiem_sanpham["hangsx_id"]))
+                                                 {<text>selected="selected"</text>}>@item.ten</option>
+                        }
+                    </select>
+                    <div class="qd_br"></div>
+                    <span>Hiển thị : </span>
+                    <select name="max_item_per_page" style="width:auto">
+                        <option value="3" @if(pagination.max_item_per_page==3) {<text>selected="selected"</text>}>3</option>
+                        <option value="5" @if(pagination.max_item_per_page==5) {<text>selected="selected"</text>}>5</option>
+                        <option value="10" @if (pagination.max_item_per_page == 10)
+                                           {<text>selected="selected"</text>}>10</option>
+                        <option value="20" @if (pagination.max_item_per_page == 20)
+                                           {<text>selected="selected"</text>}>20</option>
+                        <option value="50" @if (pagination.max_item_per_page == 50)
+                                           {<text>selected="selected"</text>}>50</option>
+                    </select>
+                    sản phẩm / trang
+                    <div class="qd_br"></div>
+                    <input name="submit" type="submit" class="button" value="Tìm kiếm">
+                    <input name="submit_reset" type="submit" class="button" value="Reset" style="margin-left:20px">
+                </form>
+                
+            </div>
+
+            <div class="tabs-position">
+                <div class="wrapper">
+                    <div style="float:right; width: auto;">
+                        <a href="@Url.Action("OrderBy", "FrontSearch", new { page=pagination.current_page, 
+                            order_by = "id", order_desc = "1"
+                            })" style="color:#242424">Mới nhất trước</a>
+                        |
+                        <a href="@Url.Action("OrderBy", "FrontSearch", new { page=pagination.current_page, 
+                            order_by = "id", order_desc = "0"
+                            })" style="color:#242424">Cũ nhất trước</a>
+                        |
+                        <a href="@Url.Action("OrderBy", "FrontSearch", new { page=pagination.current_page, 
+                            order_by = "gia", order_desc = "0"
+                            })" style="color:#242424">Giá tăng dần</a>
+                        |
+                        <a href="@Url.Action("OrderBy", "FrontSearch", new { page=pagination.current_page, 
+                            order_by = "gia", order_desc = "1"
+                            })" style="color:#242424">Giá giảm dần</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tab_container" style="visibility: visible;">
+                <div id="tab1" class="tab_content" style="display: block;">
+                    <style>
+                        .odd {
+                            background: #ffffff;
+                        }
+
+                        .even {
+                            background: #f3f3f3;
+                        }
+
+                        .browseProductDescription {
+                            color: #696969;
+                        }
+                    </style>
+                    <div id="product_list">
+                        @{
+                            Boolean product_odd = false;   
+                        }
+                        @foreach (var item in SanPham_List)
+                        {
+                            product_odd = !product_odd;
+                            string link_to_this_product = Url.Action("Index", "FrontProductDetail", new {id=item.id });
+                            
+                            <div class="leftPosition @if (product_odd)
+                                                     {<text>odd</text>}
+                                                     else
+                                                     {<text>even</text>}" style="width: 100%;" id="row_5273afd5a38c2">
+                                <div class="browse_1" style="display: block;">
+                                    <div class="bottom_separator">
+                                        <div class="wrapper2">
+                                            <div class="browseProductImageContainer">
+                                                <!-- prettyphoto href = hình gốc-->
+                                                <a rel="prettyPhoto" href="@item._get_hinhanh_macdinh()._get_full_duongdan()" target="_blank" title="@item.ten">
+                                                    <!-- prettyphoto src = hình thumb-->
+                                                    <img src="@item._get_hinhanh_macdinh()._get_full_duongdan_thumb()" style="max-height:160px; max-width:110px; width:auto; height:auto;" class="browseProductImage" title="@item.ten" alt="@item.ten" border="0">
+                                                </a>
+                                            </div>
+                                            <div class="floatElement">
+                                                <h2 class="browseProductTitle">
+                                                    <a class="product_name" title="@item.ten" href="@link_to_this_product">@item.ten</a>
+                                                </h2>
+                                                <div class="browseProductDescription">
+                                                    @item.mota
+                                                </div>
+                                                <div class="browseRatingContainer">
+                                                    &nbsp;
+                                                </div>
+                                                <div class="productDetailsContainer">
+                                                    <a class="product_details" href="@link_to_this_product" title="Product Details">Xem chi tiết </a>
+                                                </div>
+                                            </div>
+                                            <div class="floatElementR">
+                                                <div class="browsePriceContainer">
+                                                    <span class="productPrice">@item._get_gia() VNĐ</span>
+
+                                                </div>
+                                                <div class="browseAddToCartContainer">
+                                                    <button class="addtocart_button" type="button" value="Mua hàng" onclick="document.location='@link_to_this_product'">Mua hàng</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br class="clr" />
+                        }
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- BEGIN PAGE NAVIGATION -->
+            <div class="wrapper">
+                <div align="center" style="padding: 0px 5px 10px 0px;">
+                    <style>
+                        .qd_pagination {
+                            //background: #f2f2f2;
+                            padding: 20px;
+                            margin-bottom: 20px;
+                            text-align: center;
+                        }
+
+                            .qd_pagination .page {
+                                display: inline-block;
+                                padding: 3px 9px; /**/
+                                margin-right: 4px;
+                                border-radius: 3px;
+                                border: solid 1px #c0c0c0;
+                                background: #e9e9e9;
+                                box-shadow: inset 0px 1px 0px rgba(255,255,255, .8), 0px 1px 3px rgba(0,0,0, .1);
+                                font-size: .875em;
+                                font-weight: bold;
+                                text-decoration: none;
+                                color: #717171;
+                                text-shadow: 0px 1px 0px rgba(255,255,255, 1);
+                                height: 16px; /**/
+                            }
+
+                                .qd_pagination .page:hover {
+                                    background: #fefefe;
+                                    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FEFEFE), to(#f0f0f0));
+                                    background: -moz-linear-gradient(0% 0% 270deg,#FEFEFE, #f0f0f0);
+                                }
+
+                                .qd_pagination .page.active {
+                                    border: none;
+                                    background: #616161;
+                                    box-shadow: inset 0px 0px 8px rgba(0,0,0, .5), 0px 1px 0px rgba(255,255,255, .8);
+                                    color: #f0f0f0;
+                                    text-shadow: 0px 0px 3px rgba(0,0,0, .5);
+                                }
+                    </style>
+                    <div class="qd_pagination">
+                        @if (pagination.can_first_page)
+                        {
+                            <a href="@Url.Action("Index", "FrontSearch", new { page = 1 })" class="page">Đầu</a>
+                        }
+                        @if (pagination.can_prev_page)
+                        {
+                            <a href="@Url.Action("Index", "FrontSearch", new { page = pagination.current_page - 1 })" class="page">Trước</a>
+                        }
+                        @for (int tmp_pg = 1; tmp_pg <= pagination.total_page; tmp_pg++)
+                        {
+                            <a href="@Url.Action("Index", "FrontSearch", new { page = tmp_pg })" class="page @if (tmp_pg == pagination.current_page)
+                                                                                                                                    {<text>active</text>}">@tmp_pg</a>
+                        }
+
+                        @if (pagination.can_next_page)
+                        {
+                            <a href="@Url.Action("Index", "FrontSearch", new { page = pagination.current_page + 1 })" class="page">Kế</a>
+                        }
+                        @if (pagination.can_last_page)
+                        {
+                            <a href="@Url.Action("Index", "FrontSearch", new { page = pagination.total_page })" class="page">Cuối</a>
+                        }
+                    </div>
+                </div>
+
+                <div class="cl">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+    <!-- END PAGE NAVIGATION -->
+    <div id="statusBox" style="text-align: center; display: none; visibility: hidden;"></div>
+</div>
